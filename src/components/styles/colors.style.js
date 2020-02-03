@@ -14,6 +14,7 @@ export default {
   gray7: '#6d6d6d',
   gray8: '#575757',
   dark: '#404040',
+  darkOpacity: 'rgba(55, 55, 55, 0.95)',
 
   pink: '#ff6986',
   indigo: '#4780cd',

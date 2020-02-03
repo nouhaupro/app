@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Gordita';
+    font-family: 'Nouhau-Gordita';
     src: url('GorditaLight.woff2') format('woff2'),
         url('GorditaLight.woff') format('woff'),
         url('GorditaLight.ttf') format('truetype');
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Gordita';
+    font-family: 'Nouhau-Gordita';
     src: url('GorditaBold.woff2') format('woff2'),
         url('GorditaBold.woff') format('woff'),
         url('GorditaBold.ttf') format('truetype');
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Gordita';
+    font-family: 'Nouhau-Gordita';
     src: url('GorditaMedium.woff2') format('woff2'),
         url('GorditaMedium.woff') format('woff'),
         url('GorditaMedium.ttf') format('truetype');
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Gordita';
+    font-family: 'Nouhau-Gordita';
     src: url('GorditaRegular-Italic.woff2') format('woff2'),
         url('GorditaRegular-Italic.woff') format('woff'),
         url('GorditaRegular-Italic.ttf') format('truetype');
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Gordita';
+    font-family: 'Nouhau-Gordita';
     src: url('GorditaRegular.woff2') format('woff2'),
         url('GorditaRegular.woff') format('woff'),
         url('GorditaRegular.ttf') format('truetype');
