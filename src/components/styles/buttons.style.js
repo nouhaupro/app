@@ -2,23 +2,24 @@ import styled from 'styled-components';
 import colors from './colors.style';
 import variables from './variables.style';
 
-export const Botao = styled.a`
+export const Button = styled.a`
   appearance: none;
-  font-family: inherit;
-  font-size: 1em;
-  border: none;
+  font: inherit;
+  border: 0.15em solid transparent;
   border-radius: ${variables.radiusForm};
-  background-color: ${colors.primary};
-  color: ${colors.dark};
   letter-spacing: -0.02em;
   font-weight: bold;
   padding: 12px 32px;
+  margin: 5px;
+  text-transform: uppercase;
+  background-color: ${props => props.color || colors.primary};
 
   &:focus {
     outline: none;
   }
 
   &:hover {
-    background-color: ${colors.secondary};
+    cursor: pointer;
+    background-color: ${props => props.color || colors.primary};
   }
 `;

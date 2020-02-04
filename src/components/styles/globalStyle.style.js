@@ -18,7 +18,6 @@ export default createGlobalStyle`
     h1, h2, h3, h4{
       letter-spacing: -0.05em;
       margin-block-start: 0.2em;
-      margin-block-end: 0.25em;
     }
 
     a{

@@ -1,6 +1,10 @@
 export default {
   primary: '#10dcab',
+  primaryLight: '#11F2BC',
+
   secondary: '#d8e92f',
+  secondaryLight: '#EBFA54',
+
   success: '#75e26e',
   info: '#0cb7c0',
   warning: '#ffca05',

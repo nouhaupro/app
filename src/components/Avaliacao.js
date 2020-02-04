@@ -5,9 +5,10 @@ import { ListLink } from '../components/styles/menu.style';
 import { Container, Grid, Header } from './styles/layout.style';
 import { Card } from './styles/card.style';
 import { Dropdown } from './styles/forms.style';
-import { Botao } from './styles/buttons.style';
+import { Button } from './styles/buttons.style';
+import colors from './styles/colors.style';
 
-export default class Dashboard extends Component {
+export default class Avaliacao extends Component {
   render() {
     return (
       <div>
@@ -22,9 +23,6 @@ export default class Dashboard extends Component {
                 <option>Turma Janeiro/19</option>
                 <option>Turma Fevereiro/19</option>
               </Dropdown>
-            </Header>
-            <Header column='4/13'>
-              <Botao>Clica em mim</Botao>
             </Header>
           </Grid>
           <Grid height='calc(100vh - 180px)' rows='repeat(5, 1fr)'>
@@ -48,6 +46,8 @@ export default class Dashboard extends Component {
 
             <Card column='3/10' row='1/6'>
               <h1>Gersika</h1>
+              <Button>Clica em mim</Button>
+              <Button color={colors.secondary}>Clica em mim</Button>
             </Card>
 
             <Card column='10/13' row='1/2' color='dark'>

@@ -21,5 +21,6 @@ export const Header = styled.div`
   & h2,
   & h3 {
     margin-block-start: 0;
+    margin-block-end: 0.25em;
   }
 `;
