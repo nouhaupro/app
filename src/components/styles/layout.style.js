@@ -9,13 +9,14 @@ export const Grid = styled.div`
   grid-template-columns: repeat(12, 1fr);
   height: ${props => props.height || 'auto'};
   grid-template-rows: ${props => props.rows || 'repeat(1, calc(100vh - 90px))'};
-  grid-gap: 15px;
+  grid-gap: ${props => props.gap || '15px'};
 `;
 
-export const Header = styled.div`
-  grid-column: ${props => props.column || '1/13'};
+export const Row = styled.div`
+  grid-column: ${props => props.column};
   grid-row: ${props => props.row};
-  margin-top: 10px;
+  margin: ${props => props.margin};
+  padding: ${props => props.padding || '15px'};
 
   & h1,
   & h2,

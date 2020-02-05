@@ -8,7 +8,12 @@ export default createGlobalStyle`
       color: ${colors.dark};
       margin: 0;
       letter-spacing: -0.03em;
-      font-size: 12px;
+      font-size: 13px;
+    }
+
+    button{
+      font-size: 1em;
+      transition: 0.3s all ease;
     }
 
     html{

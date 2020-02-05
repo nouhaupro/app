@@ -20,10 +20,15 @@ export const Card = styled.div`
   border-radius: ${variables.radius};
   box-shadow: ${variables.shadow};
   padding: ${props => props.padding || '15px'};
+
   grid-column: ${props => props.column};
   grid-row: ${props => props.row};
   overflow-y: ${props => props.overflow || 'hidden'};
   overflow-x: hidden;
+
+  height: ${props => props.height};
+  width: ${props => props.width};
+  margin: ${props => props.margin};
 
   & p {
     line-height: 1.5em;
