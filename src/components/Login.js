@@ -4,6 +4,8 @@ import { Grid, Row } from './styles/layout.style';
 import { Card } from './styles/card.style';
 import { Button } from './styles/buttons.style';
 import LogoCor from '../assets/images/logo-cor.svg';
+import { Input, FormRow } from './styles/forms.style';
+import { Nav, NavLink } from './styles/nav.style';
 
 const ImagemLogin = styled.div`
   background-color: #10dcab;
@@ -14,7 +16,64 @@ const ImagemLogin = styled.div`
 
 const FormLogin = styled(Row)`
   text-align: center;
+
+  & img {
+    margin: 30px auto 20px auto;
+  }
 `;
+
+class Entrar extends Component {
+  render() {
+    return (
+      <>
+        <Nav links='2'>
+          <NavLink active>Login</NavLink>
+          <NavLink>Cadastre-se</NavLink>
+        </Nav>
+
+        <FormRow>
+          <Input placeholder='Nome' />
+        </FormRow>
+
+        <FormRow>
+          <Input type='password' placeholder='Senha' />
+        </FormRow>
+
+        <Button block>Entrar</Button>
+        <p>
+          <a href='http://google.com'>Esqueceu a senha?</a>
+        </p>
+      </>
+    );
+  }
+}
+
+class Cadastro extends Component {
+  render() {
+    return (
+      <>
+        <Nav links='2'>
+          <NavLink>Login</NavLink>
+          <NavLink active>Cadastre-se</NavLink>
+        </Nav>
+
+        <FormRow>
+          <Input placeholder='Nome' />
+        </FormRow>
+
+        <FormRow>
+          <Input placeholder='E-mail' />
+        </FormRow>
+
+        <FormRow>
+          <Input type='password' placeholder='Senha' />
+        </FormRow>
+
+        <Button block>Cadastrar</Button>
+      </>
+    );
+  }
+}
 
 export default class Login extends Component {
   render() {
@@ -25,11 +84,10 @@ export default class Login extends Component {
             <ImagemLogin />
           </Row>
 
-          <FormLogin column='9/13' margin='20px 0 0 0'>
+          <FormLogin column='9/13' padding='0 15px 0 0'>
             <img src={LogoCor} alt='Logo Nouhau' />
-            <p>
-              <Button>Entrar</Button>
-            </p>
+
+            <Cadastro />
           </FormLogin>
         </Grid>
       </Card>

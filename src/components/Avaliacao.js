@@ -5,13 +5,12 @@ import { ListLink } from '../components/styles/menu.style';
 import { Container, Grid, Row } from './styles/layout.style';
 import { Card } from './styles/card.style';
 import { Dropdown } from './styles/forms.style';
-import { Button, ButtonOutline } from './styles/buttons.style';
+import { Button, ButtonOutline, ButtonText } from './styles/buttons.style';
 import colors from './styles/colors.style';
 
 const students = [
   {
-    name: 'Alexia',
-    active: true
+    name: 'Alexia'
   },
   {
     name: 'Ane'
@@ -26,7 +25,8 @@ const students = [
     name: 'Gabryella'
   },
   {
-    name: 'Gersika'
+    name: 'Gersika',
+    active: true
   }
 ];
 
@@ -53,47 +53,27 @@ export default class Avaliacao extends Component {
         <Navbar />
         <Menu />
         <Container>
-          <Grid rows='90px'>
-            <Row margin='10px 15px 0 0' column='1/3'>
+          <Grid rows='60px'>
+            <Row margin='5px 15px 0 0' column='1/3'>
               <h2>Avaliação</h2>
-              <Dropdown>
+            </Row>
+          </Grid>
+          <Grid height='calc(100vh - 150px)' rows='repeat(5, 1fr)'>
+            <Card row='1/2' column='1/3'>
+              <Dropdown block>
                 <option>Turma Dezembro/18</option>
                 <option>Turma Janeiro/19</option>
                 <option>Turma Fevereiro/19</option>
               </Dropdown>
-            </Row>
-          </Grid>
-          <Grid height='calc(100vh - 180px)' rows='repeat(5, 1fr)'>
-            <Card column='1/3' row='1/6' padding='5px' overflow='auto'>
+            </Card>
+            <Card column='1/3' row='2/6' padding='5px' overflow='auto'>
               {returnNames()}
             </Card>
 
             <Card column='3/10' row='1/6'>
               <h1>Gersika</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita inventore animi neque blanditiis rerum quam doloribus
-                totam doloremque delectus, reprehenderit quisquam minima
-                assumenda enim commodi a necessitatibus quis laboriosam incidunt
-                beatae dolorem iste, aliquid eos quas? Quo necessitatibus eaque
-                odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Porro exercitationem assumenda labore explicabo? Porro
-                dignissimos ullam minima aliquam ex temporibus laborum
-                excepturi, facere quo reprehenderit. At debitis vitae in tenetur
-                sequi illum eius incidunt, facere inventore facilis, cumque
-                voluptatum animi harum ut id quis enim velit, voluptas
-                distinctio sint est placeat laudantium! Totam beatae rem nulla
-                adipisci obcaecati aliquid, asperiores dolores suscipit itaque
-                fugit voluptatibus possimus, molestias corrupti quia,
-                praesentium assumenda eveniet inventore quis impedit. Blanditiis
-                illo iste, labore eveniet explicabo error quasi officia dicta
-                nihil atque corporis excepturi, a, optio laborum ratione unde
-                veniam impedit vel rerum aperiam ex.
-              </p>
               <Button>Salvar</Button>
-              <ButtonOutline>Cancelar</ButtonOutline>
-              <Button color={colors.danger}>Salvar</Button>
-              <ButtonOutline color={colors.gray5}>Cancelar</ButtonOutline>
+              <ButtonText>Cancelar</ButtonText>
             </Card>
 
             <Card column='10/13' row='1/2' color='dark'>

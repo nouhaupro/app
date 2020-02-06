@@ -11,10 +11,18 @@ export default createGlobalStyle`
       font-size: 13px;
     }
 
-    button{
-      font-size: 1em;
+    input,
+    label,
+    select,
+    button,
+    textarea
+    {
       transition: 0.3s all ease;
+      font-family: inherit;
+      font-size: 1em;
+      appearance: none;
     }
+
 
     html{
       font-family: 'Nouhau-Gordita', sans-serif;
@@ -27,6 +35,16 @@ export default createGlobalStyle`
 
     a{
       transition: 0.3s all ease;
+    }
+
+    a:link, a:visited{
+      font-weight: 500;
+      text-decoration: none;
+      color: ${colors.gray7};
+    }
+
+    a:hover{
+      color: ${colors.primary};
     }
 
     
