@@ -18,7 +18,7 @@ const FormLogin = styled(Row)`
   text-align: center;
 
   & img {
-    margin: 30px auto 20px auto;
+    margin: 30px auto 15px auto;
   }
 `;
 
