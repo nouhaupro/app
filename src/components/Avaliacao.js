@@ -5,8 +5,8 @@ import { ListLink } from '../components/styles/menu.style';
 import { Container, Grid, Row } from './styles/layout.style';
 import { Card } from './styles/card.style';
 import { Dropdown } from './styles/forms.style';
-import { Button, ButtonOutline, ButtonText } from './styles/buttons.style';
-import colors from './styles/colors.style';
+import { Button, ButtonText } from './styles/buttons.style';
+// import colors from './styles/colors.style';
 
 const students = [
   {

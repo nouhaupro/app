@@ -39,6 +39,7 @@ export const ListLink = styled.a`
 
   &:hover {
     background-color: ${colors.gray2};
+    color: ${colors.dark};
     cursor: pointer;
   }
 `;
